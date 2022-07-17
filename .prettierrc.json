@@ -1,0 +1,5 @@
+{
+  "importOrder": ["react", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
