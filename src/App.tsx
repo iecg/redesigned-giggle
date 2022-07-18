@@ -6,7 +6,21 @@ import ExpensesList from "#components/ExpensesList/ExpensesList";
 import Expense from "#shared/types";
 
 const mockData: Expense[] = [
-  { id: 1, price: "990", description: "Tennis", date: "2022-07-17" },
+  {
+    id: 1,
+    price: "990",
+    description: "Athletic shoes",
+    category: "clothing",
+    date: "2022-07-17",
+  },
+];
+
+const mockCategories: string[] = [
+  "groceries",
+  "clothing",
+  "gas",
+  "bills",
+  "rent",
 ];
 
 function App() {
@@ -23,6 +37,7 @@ function App() {
     <div className="p-8">
       <h1 className="text-3xl font-bold underline">Expense Tracker</h1>
       <ExpenseForm
+        categories={mockCategories}
         onSubmit={(values) => {
           addNewExpense(values);
         }}
