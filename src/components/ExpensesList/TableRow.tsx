@@ -1,6 +1,6 @@
-import { formatDistance, subDays } from "date-fns";
+import { formatDistance } from "date-fns";
 
-import Expense from "./types";
+import Expense from "#shared/types";
 
 const TableRow = ({ data }: { data: Expense }) => {
   return (

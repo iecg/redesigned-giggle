@@ -1,8 +1,9 @@
 import classNames from "classnames";
 
+import Expense from "#shared/types";
+
 import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";
-import Expense from "./types";
 
 const ExpensesList = ({
   data,

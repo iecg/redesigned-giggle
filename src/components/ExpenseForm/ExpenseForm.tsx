@@ -1,8 +1,9 @@
 import classNames from "classnames";
-import { Field, FieldProps, Form, Formik, FormikValues } from "formik";
+import { Field, FieldProps, Form, Formik } from "formik";
 import * as Yup from "yup";
 
-import Expense from "../ExpensesList/types";
+import Expense from "#shared/types";
+
 import "./ExpenseForm.scss";
 
 const initialValues: Expense = {

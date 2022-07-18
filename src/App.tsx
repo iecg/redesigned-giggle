@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
-import ExpenseForm from "./components/ExpenseForm/ExpenseForm";
-import ExpensesList from "./components/ExpensesList/ExpensesList";
-import Expense from "./components/ExpensesList/types";
+import ExpenseForm from "#components/ExpenseForm/ExpenseForm";
+import ExpensesList from "#components/ExpensesList/ExpensesList";
+
+import Expense from "#shared/types";
 
 const mockData: Expense[] = [
   { id: 1, price: "990", description: "Tennis", date: "2022-07-17" },
@@ -23,7 +24,6 @@ function App() {
       <h1 className="text-3xl font-bold underline">Expense Tracker</h1>
       <ExpenseForm
         onSubmit={(values) => {
-          console.log(values);
           addNewExpense(values);
         }}
         className="my-4"

@@ -56,5 +56,9 @@
     "postcss-nesting": "^10.1.10",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.6"
+  },
+  "imports": {
+    "#components/*": "./src/components/*",
+    "#shared/*": "./src/shared/*"
   }
 }
